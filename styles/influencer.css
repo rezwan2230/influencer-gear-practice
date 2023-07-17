@@ -79,7 +79,6 @@ a {
 .banner-container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     column-gap: 50px;
 }
 
@@ -108,13 +107,68 @@ a {
 .sponsor {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    /* border: 1px solid var(--primary-color); */
     border-top: 0.1px solid rgba(128, 128, 128, 0.115);
     border-bottom: 1px solid rgba(128, 128, 128, 0.137);
-    position: center;
     justify-items: center;
     align-items: center;
     height: 65px;
     margin: 0px 100px;
     margin-top: 150px;
+}
+
+
+/* popular collection section */
+.popular {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.popular-title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.popular-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.box {
+    padding: 10px;
+    height: 410px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s;
+}
+.box:hover {
+    transform: scale(1.07);
+}
+
+
+.box .box-title {
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.box .box-price {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.box-description {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.252px;
+    margin-top: -12px;
+}
+
+.box img{
+    width: 100%;
 }
