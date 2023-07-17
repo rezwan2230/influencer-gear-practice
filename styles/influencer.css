@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+
+/* shared Styles */
+body {
+    font-family: 'Poppins';
+    margin: 40px 130px;
+    font-size: 1rem;
+}
+
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #18191F;
+    --gray: #787885;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+}
+
+.primary-btn {
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* Header style */
+
+header {
+    background-image: url("/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom right 40px;
+}
+
+
+/* Navbar style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 4rem;
+}
+
+a {
+    text-decoration: none;
+    width: 49px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo {
+    width: 243px;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+/* banner section style */
+.banner-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 50px;
+}
+
+.title {
+    width: 700px;
+    height: 133px;
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.description {
+    width: 600px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+.banner-image img {
+    width: 100%;
+    padding-left: 230px;
+    margin-top: 100px;
+}
+
+/* sponsors section */
+.sponsor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* border: 1px solid var(--primary-color); */
+    border-top: 0.1px solid rgba(128, 128, 128, 0.115);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.137);
+    position: center;
+    justify-items: center;
+    align-items: center;
+    height: 65px;
+    margin: 0px 100px;
+    margin-top: 150px;
+}
